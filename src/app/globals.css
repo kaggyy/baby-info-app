@@ -1,27 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
+
+/* Baloo 2: 欧文・数字に適用。size-adjust: 130% で和文の1.3倍サイズで描画。
+   ウェイトを1段階下げる: 400→400(下限), 500→400のファイル, 700→500のファイル */
+@font-face {
+  font-family: 'Baloo2Scaled';
+  src: url('https://fonts.gstatic.com/s/baloo2/v23/wXK0E3kTposypRydzVT08TS3JnAmtdgazapv.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  size-adjust: 130%;
+  unicode-range: U+0020-007E, U+00A0-00FF;
+}
+
+@font-face {
+  font-family: 'Baloo2Scaled';
+  src: url('https://fonts.gstatic.com/s/baloo2/v23/wXK0E3kTposypRydzVT08TS3JnAmtdgazapv.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  size-adjust: 130%;
+  unicode-range: U+0020-007E, U+00A0-00FF;
+}
+
+@font-face {
+  font-family: 'Baloo2Scaled';
+  src: url('https://fonts.gstatic.com/s/baloo2/v23/wXK0E3kTposypRydzVT08TS3JnAmtdgozapv.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  size-adjust: 130%;
+  unicode-range: U+0020-007E, U+00A0-00FF;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #fdf9ef;
+  --foreground: #1c1917;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  font-family: 'Baloo2Scaled', 'Zen Maru Gothic', sans-serif;
 }

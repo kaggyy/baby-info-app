@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Sokka! - みんなが検索した、赤ちゃんの困りごと辞典',
   description: '毎日更新！育児のよくある困りごとを、ランキング形式でお届けします。今日いちばん多いお悩みから、順番に確認できます。',
   icons: { icon: '/favicon.png' },
+  openGraph: {
+    images: [{ url: '/OGP.png' }],
+  },
 };
 
 export default function RootLayout({

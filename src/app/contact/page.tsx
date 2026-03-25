@@ -51,7 +51,7 @@ export default function ContactPage() {
               ご意見・ご要望・掲載内容に関するご指摘など、お気軽にお送りください。いただいたお問い合わせには、通常3営業日以内にご返答いたします。
             </p>
             <a
-              href="mailto:hello@sokka.example.com"
+              href="mailto:r.kagimoto.23@gmail.com"
               className="inline-flex items-center gap-2 px-5 py-3 bg-[#ec75aa] text-white text-sm font-bold rounded-full hover:bg-[#d9619a] transition-colors"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

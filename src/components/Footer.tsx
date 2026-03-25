@@ -4,12 +4,13 @@ export default function Footer() {
   return (
     <footer className="bg-[#4C4343] px-4 lg:px-6 py-5">
       <div className="flex items-center justify-between gap-3 min-w-0">
-        <img
-          src="/logo.svg"
-          alt="Sokka!"
-          className="shrink min-w-0"
-          style={{ height: '15px', maxWidth: '80px', width: 'auto', filter: 'brightness(0) invert(1)' }}
-        />
+        <Link href="/" className="shrink min-w-0 hover:opacity-70 transition-opacity">
+          <img
+            src="/logo.svg"
+            alt="Sokka!"
+            style={{ height: '15px', maxWidth: '80px', width: 'auto', filter: 'brightness(0) invert(1)' }}
+          />
+        </Link>
         <nav className="flex items-center gap-3 flex-nowrap shrink-0">
           <Link href="/about" className="text-[#FDF9EF] text-[11px] whitespace-nowrap hover:opacity-70 transition-opacity">
             Sokka!について
